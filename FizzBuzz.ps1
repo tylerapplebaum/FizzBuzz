@@ -8,13 +8,13 @@ foreach ($i in $arr){ #Iterate through the array
 $FizzBuzz = 15 #If a number is divisible by both 3 and 5, then it's divisible by 15.
 $Buzz = 5
 $Fizz = 3
-  If ($i % 15){ #Define the "most restrictive" condition first
+  If ($i % 15 -eq 0){ #Define the "most restrictive" condition first
     Write-Output "FizzBuzz"
   }
-  Elseif ($i % 5){ #Define the second condition
+  Elseif ($i % 5 -eq 0){ #Define the second condition
     Write-Output "Buzz"
   }
-  Elseif ($i % 3){ #Define the third condition
+  Elseif ($i % 3 -eq 0){ #Define the third condition
     Write-Output "Fizz"
   }
   Else {
